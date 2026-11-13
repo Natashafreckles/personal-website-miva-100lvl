@@ -1,0 +1,334 @@
+<!doctype html>
+<!-- Declares this document as an HTML5 document. -->
+<html lang="en">
+  <!-- The lang attribute specifies that the page content is written in English. -->
+
+  <head>
+    <!-- Defines the character encoding to support standard text and symbols. -->
+    <meta charset="utf-8" />
+
+    <!-- Ensures the page scales correctly across mobile phones, tablets, and desktops. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Sets the browser theme colour for supported browsers. -->
+    <meta name="theme-color" content="#f7f5ff" />
+
+    <!-- Provides a short description of the Projects page for search engines. -->
+    <meta
+      name="description"
+      content="Explore customer experience projects and service concepts by Natasha Okocha."
+    />
+
+    <!-- Sets the title displayed in the browser tab. -->
+    <title>Projects - Natasha Okocha</title>
+
+    <!-- Establishes an early connection to Google Fonts to improve font-loading performance. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- Establishes an early connection to Google's font file server. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Imports the DM Sans and Manrope font families with the specified font weights. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Links the external CSS file responsible for the website's layout and styling. -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Loads the external JavaScript file after the HTML has been parsed. -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Provides keyboard and screen-reader users with a shortcut to the main content. -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Main website header containing the brand identity and navigation menu. -->
+    <header class="site-header">
+      <div class="nav-shell">
+        <!-- Brand link: clicking it takes visitors back to the homepage. -->
+        <!-- aria-label provides an accessible description of the link. -->
+        <a class="brand" href="index.html" aria-label="Natasha Okocha home">
+          <!-- Displays the initials used as the website's brand mark. -->
+          <span class="brand-mark">NO</span>
+
+          <!-- Displays the full name beside the brand initials. -->
+          <span class="brand-name">
+            Natasha Okocha<span class="brand-dot">.</span>
+          </span>
+        </a>
+
+        <!-- Mobile navigation toggle button. -->
+        <!-- aria-expanded indicates whether the navigation menu is currently expanded. -->
+        <!-- aria-controls identifies the navigation element controlled by this button. -->
+        <!-- aria-label provides an accessible name for the button. -->
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open navigation"
+        >
+          <!-- These three spans form the hamburger menu icon. -->
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- Main navigation containing links to the different website pages. -->
+        <!-- The aria-label identifies this as the main navigation for assistive technologies. -->
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <!-- Link to the homepage. -->
+          <a href="index.html">Home</a>
+
+          <!-- Link to the About page. -->
+          <a href="about.html">About</a>
+
+          <!-- Link to the Projects page. aria-current="page" identifies the active page. -->
+          <a href="projects.html" aria-current="page">Projects</a>
+
+          <!-- Link to the Planner page. -->
+          <a href="planner.html">Planner</a>
+
+          <!-- Contact link with a visual arrow indicating navigation. -->
+          <a class="nav-contact" href="contact.html">
+            Let’s Talk <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content area of the Projects page. -->
+    <main id="main">
+      <!-- Projects page introduction section. -->
+      <section class="page-hero section-wrap">
+        <!-- Small introductory label describing the content of the page. -->
+        <p class="eyebrow">CUSTOMER EXPERIENCE WORK</p>
+
+        <!-- Main heading introducing the projects portfolio. -->
+        <!-- The br element creates a line break, while text-accent highlights part of the heading. -->
+        <h1>
+          Better support,<br /><span class="text-accent">
+            thoughtfully designed.</span
+          >
+        </h1>
+
+        <!-- Short introduction explaining the focus and purpose of the projects displayed below. -->
+        <p class="page-lede">
+          A few customer experience and service operations concepts focused on
+          clear answers, helpful guidance, and smoother customer journeys.
+        </p>
+      </section>
+
+      <!-- Container holding all three featured customer experience projects. -->
+      <section class="section-wrap projects-list">
+        <!-- ========================================================= -->
+        <!-- PROJECT 1: CUSTOMER SUPPORT GUIDE                         -->
+        <!-- ========================================================= -->
+
+        <!-- Individual project article. The ID allows direct navigation to this project. -->
+        <article class="project-detail" id="customer-support-guide">
+          <!-- Image container for the first project. -->
+          <div class="detail-image">
+            <!-- Project preview image loaded from Unsplash. -->
+            <!-- alt provides alternative text if the image cannot be displayed or for screen readers. -->
+            <!-- loading="lazy" delays loading until the image is approaching the visible screen area. -->
+            <img
+              src="https://images.unsplash.com/photo-1730818876613-f05d86886e93?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+              alt="Customer Support Guide"
+              loading="lazy"
+            />
+
+            <!-- Displays the project's position in the portfolio. -->
+            <span class="image-index">01 / 03</span>
+          </div>
+
+          <!-- Text content describing the first project. -->
+          <div class="detail-copy">
+            <!-- Identifies the project category and indicates that it is a concept. -->
+            <p class="eyebrow">CUSTOMER SUPPORT · CONCEPT</p>
+
+            <!-- Project title. -->
+            <h2>Customer Support Guide</h2>
+
+            <!-- Explains the purpose, features, and value of the customer support guide. -->
+            <p>
+              A self-service guide that organizes FAQs, product instructions,
+              and step-by-step troubleshooting in one easy-to-navigate resource.
+              It helps customers resolve common questions independently while
+              giving support teams more time for complex cases.
+            </p>
+
+            <!-- Displays the main skills and concepts associated with this project. -->
+            <div class="tag-list">
+              <span>Self-service support</span>
+              <span>Product guidance</span>
+              <span>Customer education</span>
+            </div>
+
+            <!-- External link that opens the completed Customer Support Guide project. -->
+            <!-- The arrow is hidden from screen readers because it is decorative. -->
+            <a
+              class="inline-link"
+              href="https://customer-support-guide.netlify.app"
+            >
+              View the Guide <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- ========================================================= -->
+        <!-- PROJECT 2: CX METRICS                                      -->
+        <!-- ========================================================= -->
+
+        <!-- Second project article. -->
+        <!-- project-detail-reverse applies an alternative layout, likely reversing the image and text positions. -->
+        <article class="project-detail project-detail-reverse" id="cx-metrics">
+          <!-- Image container for the CX Metrics project. -->
+          <div class="detail-image">
+            <!-- Preview image representing a data or analytics dashboard. -->
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+              alt="cx-metrics"
+              loading="lazy"
+            />
+
+            <!-- Displays the project's position in the portfolio. -->
+            <span class="image-index">02 / 03</span>
+          </div>
+
+          <!-- Text content describing the second project. -->
+          <div class="detail-copy">
+            <!-- Identifies the project category and indicates that it is a concept. -->
+            <p class="eyebrow">SERVICE OPERATIONS · CONCEPT</p>
+
+            <!-- Project title. -->
+            <h2>CX Metrics</h2>
+
+            <!-- Explains the purpose of the CX metrics dashboard and the insights it provides. -->
+            <p>
+              A CX metrics dashboard concept that brings key service indicators
+              into one clear view. It helps teams monitor customer satisfaction,
+              response times, and resolution trends, spot friction points, and
+              use insights to improve the customer experience.
+            </p>
+
+            <!-- Displays the main metrics and concepts covered by the project. -->
+            <div class="tag-list">
+              <span>Customer satisfaction</span>
+              <span>Response times</span>
+              <span>Resolution trends</span>
+            </div>
+
+            <!-- External link that opens the CX Metrics dashboard project. -->
+            <a class="inline-link" href="https://cx-metrics.netlify.app">
+              View the CX Metrics <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- ========================================================= -->
+        <!-- PROJECT 3: E-COMMERCE SUPPORT DASHBOARD                    -->
+        <!-- ========================================================= -->
+
+        <!-- Third project article. -->
+        <article class="project-detail" id="ecommerce-support">
+          <!-- Image container for the e-commerce support dashboard. -->
+          <div class="detail-image">
+            <!-- Preview image representing an analytics or business dashboard. -->
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+              alt="Analytics dashboard with charts on a computer screen"
+              loading="lazy"
+            />
+
+            <!-- Displays the project's position in the portfolio. -->
+            <span class="image-index">03 / 03</span>
+          </div>
+
+          <!-- Text content describing the third project. -->
+          <div class="detail-copy">
+            <!-- Identifies the project category and its focus on customer service journeys. -->
+            <p class="eyebrow">E-COMMERCE · SERVICE JOURNEY</p>
+
+            <!-- Project title. -->
+            <h2>E-commerce Support Dashboard</h2>
+
+            <!-- Explains how the dashboard helps organize customer requests and support operations. -->
+            <p>
+              A sample service dashboard for organizing common order questions,
+              helping customers find timely updates, and giving support agents a
+              clearer view of where a request stands.
+            </p>
+
+            <!-- Displays the main customer service concepts associated with this project. -->
+            <div class="tag-list">
+              <span>Customer journey</span>
+              <span>Issue resolution</span>
+              <span>Omnichannel support</span>
+            </div>
+
+            <!-- External link that opens the e-commerce support dashboard project. -->
+            <a
+              class="inline-link"
+              href="https://ecommerce-dashboard-c9abce.netlify.app/"
+            >
+              View the dashboard <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- CALL-TO-ACTION SECTION                                    -->
+      <!-- ========================================================= -->
+
+      <!-- Promotional section encouraging visitors to get in touch. -->
+      <section class="cta-band">
+        <!-- Inner container controls the alignment and width of the CTA content. -->
+        <div class="section-wrap cta-inner">
+          <!-- CTA heading and introductory text. -->
+          <div>
+            <!-- Small heading introducing the contact invitation. -->
+            <p class="eyebrow">HAVE A QUESTION OR OPPORTUNITY?</p>
+
+            <!-- Main call-to-action message. The span highlights the word "count". -->
+            <h2>Let’s make every interaction <span>count.</span></h2>
+          </div>
+
+          <!-- Button-style link that takes visitors to the Contact page. -->
+          <a class="button button-light" href="contact.html">
+            Let’s talk <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- WEBSITE FOOTER                                            -->
+    <!-- ========================================================= -->
+
+    <!-- Footer containing the brand identity, tagline, and copyright information. -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <!-- Footer brand link that takes visitors back to the homepage. -->
+        <a class="brand footer-brand" href="index.html">
+          <!-- Displays the brand initials. -->
+          <span class="brand-mark">NO</span>
+
+          <!-- Displays the full brand name. -->
+          <span class="brand-name">
+            Natasha Okocha<span class="brand-dot">.</span>
+          </span>
+        </a>
+
+        <!-- Short statement summarising the brand's customer experience focus. -->
+        <p>Creating better customer experiences, one interaction at a time.</p>
+
+        <!-- Copyright information. -->
+        <!-- data-year provides a hook that JavaScript can use to update the year dynamically. -->
+        <p class="copyright">© <span data-year>2026</span> Natasha Okocha</p>
+      </div>
+    </footer>
+  </body>
+</html>

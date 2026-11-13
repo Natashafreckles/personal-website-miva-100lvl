@@ -1,0 +1,524 @@
+<!doctype html>
+<!-- Declares the document as an HTML5 webpage. -->
+<html lang="en">
+  <!-- HEAD SECTION: Contains metadata, page title, font imports, stylesheets, and scripts. -->
+  <head>
+    <!-- Defines the character encoding to support standard text and special characters. -->
+    <meta charset="utf-8" />
+
+    <!-- Makes the website responsive by matching the viewport width to the device width. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Sets the browser theme colour, especially for supported mobile browsers. -->
+    <meta name="theme-color" content="#f7f5ff" />
+
+    <!-- Provides a description of the About page for search engines and social previews. -->
+    <meta
+      name="description"
+      content="Learn about Natasha Okocha's customer experience skills, education, and career aspirations."
+    />
+
+    <!-- Defines the text displayed in the browser tab. -->
+    <title>About Natasha - Customer Experience Specialist</title>
+
+    <!-- Establishes an early connection to Google Fonts to improve font loading speed. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- Establishes a connection to Google's font delivery server without sending credentials. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Imports the DM Sans and Manrope font families with the specified font weights. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Connects the external CSS file responsible for the website's styling and layout. -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Loads the external JavaScript file after the HTML document has been parsed. -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <!-- BODY SECTION: Contains all visible content displayed on the webpage. -->
+  <body>
+    <!-- Accessibility link that allows keyboard users to skip navigation and jump to the main content. -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- HEADER SECTION: Contains the website branding and primary navigation menu. -->
+    <header class="site-header">
+      <!-- Navigation container used to align the brand logo and navigation links. -->
+      <div class="nav-shell">
+        <!-- Website brand logo and name. Clicking it takes visitors to the homepage. -->
+        <a class="brand" href="index.html" aria-label="Natasha Okocha home">
+          <!-- Displays the initials used as the website's logo mark. -->
+          <span class="brand-mark">NO</span>
+
+          <!-- Displays the website owner's name alongside a decorative coloured dot. -->
+          <span class="brand-name">
+            Natasha Okocha<span class="brand-dot">.</span>
+          </span>
+        </a>
+
+        <!-- MOBILE NAVIGATION TOGGLE -->
+        <!-- Button used to open and close the navigation menu on smaller screens. -->
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open navigation"
+        >
+          <!-- Three spans are styled with CSS to create the hamburger menu icon. -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- PRIMARY NAVIGATION -->
+        <!-- Contains links to the main pages of the website. -->
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <!-- Navigation link to the homepage. -->
+          <a href="index.html">Home</a>
+
+          <!-- About page link. aria-current indicates that this is the active page. -->
+          <a href="about.html" aria-current="page">About</a>
+
+          <!-- Navigation link to the Projects page. -->
+          <a href="projects.html">Projects</a>
+
+          <!-- Navigation link to the Planner page. -->
+          <a href="planner.html">Planner</a>
+
+          <!-- Contact link styled differently to make it stand out from other navigation items. -->
+          <a class="nav-contact" href="contact.html">
+            Let’s Talk <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT: Contains the primary information presented on the About page. -->
+    <main id="main">
+      <!-- PAGE HERO SECTION -->
+      <!-- Introduces the About page with a prominent heading and supporting text. -->
+      <section class="page-hero section-wrap">
+        <!-- Main heading identifying the purpose of the page. -->
+        <h1>About <span class="text-accent">Me.</span></h1>
+
+        <!-- Short introductory statement displayed beneath the main heading. -->
+        <p class="about-me">A little more about me...</p>
+      </section>
+
+      <!-- ABOUT OVERVIEW SECTION -->
+      <!-- Contains Natasha's educational background, professional skills, career aspirations, and work philosophy. -->
+      <section class="section-wrap about-overview">
+        <!-- Grid container used to organise the different profile information cards. -->
+        <div class="about-card-grid">
+          <!-- ====================================================== -->
+          <!-- EDUCATIONAL BACKGROUND CARD -->
+          <!-- Displays Natasha's qualifications, certifications, and ongoing education. -->
+          <!-- ====================================================== -->
+          <article class="profile-card education-profile-card">
+            <!-- Card heading containing an icon, category label, and section title. -->
+            <div class="profile-card-heading">
+              <!-- Decorative education icon displayed beside the card heading. -->
+              <span class="profile-icon" aria-hidden="true">
+                <!-- Inline SVG used to draw an open-book illustration. -->
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <!-- Draws the two open pages of the book. -->
+                  <path
+                    d="M12 6.5C9.5 4.5 6.5 4 3 4v14c3.5 0 6.5.5 9 2.5 2.5-2 5.5-2.5 9-2.5V4c-3.5 0-6.5.5-9 2.5Z"
+                  />
+
+                  <!-- Draws the centre line separating the two pages. -->
+                  <path d="M12 6.5v14" />
+                </svg>
+              </span>
+
+              <!-- Contains the card's category label and main heading. -->
+              <div>
+                <!-- Small uppercase label describing the information in the card. -->
+                <p class="eyebrow">MY BACKGROUND</p>
+
+                <!-- Title of the educational background card. -->
+                <h2>Educational background</h2>
+              </div>
+            </div>
+
+            <!-- List of educational qualifications and professional certifications. -->
+            <ul class="credential-list">
+              <!-- FIRST CREDENTIAL: Customer Success Fundamentals certification. -->
+              <li>
+                <!-- Checkmark icon indicating a completed certification. -->
+                <span class="credential-icon" aria-hidden="true">✓</span>
+
+                <!-- Displays the qualification name and certification status. -->
+                <div>
+                  <strong>Customer Success Fundamentals</strong>
+                  <small>Certified</small>
+                </div>
+              </li>
+
+              <!-- SECOND CREDENTIAL: CSRM certification. -->
+              <li>
+                <!-- Checkmark icon indicating a completed certification. -->
+                <span class="credential-icon" aria-hidden="true">✓</span>
+
+                <!-- Displays the certification name and status. -->
+                <div>
+                  <strong>CSRM</strong>
+                  <small>Certified</small>
+                </div>
+              </li>
+
+              <!-- THIRD CREDENTIAL: Bachelor's degree currently being pursued. -->
+              <li>
+                <!-- Arrow icon indicating an ongoing educational qualification. -->
+                <span class="credential-icon" aria-hidden="true">↗</span>
+
+                <!-- Displays the degree name and current study status. -->
+                <div>
+                  <strong>B.Sc. Cybersecurity</strong>
+                  <small>In progress</small>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- ====================================================== -->
+          <!-- PROFESSIONAL SKILLS CARD -->
+          <!-- Displays Natasha's core customer experience skills and technology tools. -->
+          <!-- ====================================================== -->
+          <article class="profile-card skills-profile-card">
+            <!-- Card heading containing a decorative icon and section title. -->
+            <div class="profile-card-heading">
+              <!-- Decorative symbol representing the skills section. -->
+              <span class="profile-icon" aria-hidden="true">✳</span>
+
+              <!-- Contains the category label and heading. -->
+              <div>
+                <!-- Small uppercase label describing the purpose of the card. -->
+                <p class="eyebrow">HOW I HELP</p>
+
+                <!-- Main heading identifying the professional skills section. -->
+                <h2>Skills</h2>
+              </div>
+            </div>
+
+            <!-- List of Natasha's customer support and customer experience skills. -->
+            <ul class="profile-skill-list">
+              <!-- Individual professional skills displayed as list items. -->
+              <li>Customer Support</li>
+              <li>Customer Experience</li>
+              <li>Customer Onboarding</li>
+              <li>Product Guidance</li>
+              <li>Communication</li>
+              <li>Problem Solving</li>
+              <li>Troubleshooting</li>
+              <li>Feedback Analysis</li>
+              <li>Relationship Management</li>
+              <li>Service Operations</li>
+              <li>Cross-functional Escalation</li>
+            </ul>
+
+            <!-- TECHNOLOGY TOOLS SUBSECTION -->
+            <!-- Displays software platforms and tools used in customer support operations. -->
+            <div class="tech-tools">
+              <!-- Heading identifying the technology tools subsection. -->
+              <h3>Tech tools</h3>
+
+              <!-- List of software platforms displayed as styled pills using CSS. -->
+              <ul class="profile-skill-list tool-pills">
+                <!-- Individual customer support and CRM tools. -->
+                <li>Zoho</li>
+                <li>Zendesk</li>
+                <li>Intercom</li>
+                <li>Salesforce</li>
+                <li>Tawk.io</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- ====================================================== -->
+          <!-- CAREER ASPIRATIONS CARD -->
+          <!-- Explains Natasha's long-term professional goals and career direction. -->
+          <!-- ====================================================== -->
+          <article class="profile-card aspiration-profile-card">
+            <!-- Card heading containing a decorative icon and section title. -->
+            <div class="profile-card-heading">
+              <!-- Decorative circular icon representing future goals and direction. -->
+              <span class="profile-icon" aria-hidden="true">◎</span>
+
+              <!-- Contains the category label and heading. -->
+              <div>
+                <!-- Small uppercase label introducing the career aspirations section. -->
+                <p class="eyebrow">WHERE I’M HEADED</p>
+
+                <!-- Main heading of the career aspirations card. -->
+                <h2>My career aspirations</h2>
+              </div>
+            </div>
+
+            <!-- Paragraph describing Natasha's professional ambitions and intended career progression. -->
+            <p>
+              To grow in the tech industry and take on bigger roles in customer
+              success management. Building on my experience in customer success,
+              I’d pivot into Governance, Risk and Compliance, helping to shape
+              policies and build frameworks that protect customers in this
+              ever-evolving cyber space.
+            </p>
+
+            <!-- Highlighted statement summarising the connection between current experience and future goals. -->
+            <div class="aspiration-note">
+              <!-- Decorative star symbol preceding the career statement. -->
+              <span aria-hidden="true">✦</span>
+
+              <!-- Short statement highlighting Natasha's professional direction. -->
+              Customer success today. Safer digital experiences tomorrow.
+            </div>
+          </article>
+
+          <!-- ====================================================== -->
+          <!-- CUSTOMER EXPERIENCE PHILOSOPHY CARD -->
+          <!-- Highlights Natasha's customer-first approach and professional experience. -->
+          <!-- ====================================================== -->
+          <article class="profile-card experience-profile-card">
+            <!-- Card heading containing a heart icon and section title. -->
+            <div class="profile-card-heading">
+              <!-- Decorative heart symbol representing care and customer satisfaction. -->
+              <span class="profile-icon" aria-hidden="true">♡</span>
+
+              <!-- Contains the category label and main heading. -->
+              <div>
+                <!-- Small uppercase label introducing the customer experience philosophy. -->
+                <p class="eyebrow">WHAT MATTERS TO ME</p>
+
+                <!-- Main heading expressing Natasha's customer-first philosophy. -->
+                <h2>Customer-first, always.</h2>
+              </div>
+            </div>
+
+            <!-- Paragraph explaining Natasha's approach to customer service and issue resolution. -->
+            <p>
+              I believe great service starts with listening. I enjoy making
+              onboarding feel welcoming, turning product questions into clear
+              guidance, and working across teams to resolve issues at their
+              source.
+            </p>
+
+            <!-- EXPERIENCE STATISTIC -->
+            <!-- Highlights Natasha's years of professional customer experience. -->
+            <div class="experience-stat">
+              <!-- Displays the number of years of experience in a prominent format. -->
+              <strong>4+</strong>
+
+              <!-- Explains what the experience statistic represents. -->
+              <span>years creating better customer experiences</span>
+            </div>
+
+            <!-- Lists the industries in which Natasha has professional experience. -->
+            <p class="experience-industries">
+              Experience across <strong>tech</strong>,
+              <strong>non-profit</strong>, and
+              <strong>service</strong> industries.
+            </p>
+          </article>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- DECORATIVE CUSTOMER EXPERIENCE ILLUSTRATION -->
+        <!-- Displays an SVG illustration alongside a motivational message. -->
+        <!-- ====================================================== -->
+        <figure class="about-artwork">
+          <!-- Decorative handwritten-style note displayed above or beside the illustration. -->
+          <div class="artwork-note">
+            <!-- First line of the motivational message. -->
+            <span>Always learning,</span>
+
+            <!-- Second line of the motivational message. -->
+            <span>always growing...</span>
+
+            <!-- Inline SVG used to draw decorative curved underline strokes. -->
+            <svg viewBox="0 0 210 30" aria-hidden="true">
+              <!-- First curved line beneath the motivational message. -->
+              <path d="M5 22C58 5 139 4 204 17" />
+
+              <!-- Second curved line used to enhance the handwritten effect. -->
+              <path d="M49 27c43-11 99-12 143-5" />
+            </svg>
+          </div>
+
+          <!-- Decorative star positioned around the illustration. -->
+          <span class="artwork-spark artwork-spark-one" aria-hidden="true">
+            ✦
+          </span>
+
+          <!-- Additional decorative sparkle symbol. -->
+          <span class="artwork-spark artwork-spark-two" aria-hidden="true">
+            ✳
+          </span>
+
+          <!-- MAIN SVG ILLUSTRATION -->
+          <!-- Custom vector illustration representing a customer experience specialist helping a customer. -->
+          <svg
+            class="customer-artwork"
+            viewBox="0 0 420 480"
+            role="img"
+            aria-labelledby="customer-artwork-title"
+          >
+            <!-- SVG title provides an accessible description of the illustration. -->
+            <title id="customer-artwork-title">
+              Customer experience specialist helping a customer
+            </title>
+
+            <!-- Background shadow beneath the illustrated character. -->
+            <ellipse cx="212" cy="427" rx="157" ry="21" fill="#e5ddfa" />
+
+            <!-- Large circular background shape behind the character. -->
+            <circle cx="211" cy="224" r="169" fill="#eee9ff" />
+
+            <!-- Draws the main upper body and clothing of the character. -->
+            <path
+              d="M92 402c8-65 41-103 91-103s84 38 92 103v20H92z"
+              fill="#8d6add"
+            />
+
+            <!-- Draws the white collar detail on the character's clothing. -->
+            <path d="M154 309l29 47 29-47" fill="#fff" />
+
+            <!-- Draws the darker lower section of the character's clothing. -->
+            <path d="M183 356h22l14 66h-50z" fill="#6745b4" />
+
+            <!-- Draws the character's face and neck area. -->
+            <path
+              d="M139 203c0-48 24-79 62-79s62 31 62 79v57c0 47-27 79-62 79s-62-32-62-79z"
+              fill="#9e553e"
+            />
+
+            <!-- Draws the character's hairstyle and hair shape. -->
+            <path
+              d="M138 207c-8-69 24-107 69-107 44 0 69 34 64 92-17-11-29-28-34-47-21 25-55 40-99 43z"
+              fill="#38243f"
+            />
+
+            <!-- Draws the character's ears using curved paths. -->
+            <path
+              d="M143 217c-18-19-23-8-18 10 4 14 12 23 22 22m113-32c17-19 22-8 18 10-4 14-12 23-22 22"
+              fill="#9e553e"
+            />
+
+            <!-- Draws the character's eyes using two short rounded lines. -->
+            <path
+              d="M177 218h17m21 0h17"
+              stroke="#38243f"
+              stroke-linecap="round"
+              stroke-width="4"
+            />
+
+            <!-- Draws the character's smiling mouth. -->
+            <path
+              d="M192 256c8 7 18 7 26 0"
+              fill="none"
+              stroke="#713b37"
+              stroke-linecap="round"
+              stroke-width="4"
+            />
+
+            <!-- Draws the dark desk or surface in front of the character. -->
+            <path d="M78 374h263l-23 13H101z" fill="#38285b" />
+
+            <!-- Draws the white upper surface of the desk. -->
+            <path d="M117 344h190l27 30H90z" fill="#fff" />
+
+            <!-- Adds a decorative line detail to the desk surface. -->
+            <path
+              d="M159 362h108"
+              stroke="#ded5f5"
+              stroke-linecap="round"
+              stroke-width="5"
+            />
+
+            <!-- Draws a speech bubble to represent communication with a customer. -->
+            <rect x="273" y="185" width="104" height="70" rx="18" fill="#fff" />
+
+            <!-- Draws horizontal lines inside the speech bubble to represent text. -->
+            <path
+              d="M299 218h52m-52 15h34"
+              stroke="#b09ae8"
+              stroke-linecap="round"
+              stroke-width="6"
+            />
+
+            <!-- Draws the pointed tail of the speech bubble. -->
+            <path d="M301 255l-10 15 26-15" fill="#fff" />
+
+            <!-- Draws a circular notification badge indicating a successful interaction. -->
+            <circle cx="345" cy="164" r="23" fill="#d9f0e5" />
+
+            <!-- Draws a checkmark inside the notification badge. -->
+            <path
+              d="m335 164 7 7 13-15"
+              fill="none"
+              stroke="#399875"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="5"
+            />
+
+            <!-- Draws a decorative star on the left side of the illustration. -->
+            <path
+              d="m77 178 8 14 16 2-12 11 3 16-15-8-14 8 3-16-12-11 16-2z"
+              fill="#c6b3f3"
+            />
+          </svg>
+        </figure>
+      </section>
+
+      <!-- CALL-TO-ACTION SECTION -->
+      <!-- Encourages visitors, recruiters, and potential clients to contact Natasha. -->
+      <section class="cta-band">
+        <!-- Container used to align the CTA heading and contact button. -->
+        <div class="section-wrap cta-inner">
+          <!-- Contains the introductory label and main call-to-action heading. -->
+          <div>
+            <!-- Small uppercase text introducing the invitation to connect. -->
+            <p class="eyebrow">LET’S CONNECT</p>
+
+            <!-- Main call-to-action heading encouraging visitors to start a conversation. -->
+            <h2>Good things start with <span>hello.</span></h2>
+          </div>
+
+          <!-- Button directing visitors to the Contact page. -->
+          <a class="button button-light" href="contact.html">
+            Let’s talk <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <!-- Displays website branding, a professional statement, and copyright information. -->
+    <footer class="site-footer">
+      <!-- Main footer container used to organise the footer elements. -->
+      <div class="footer-inner">
+        <!-- Footer brand logo linking back to the homepage. -->
+        <a class="brand footer-brand" href="index.html">
+          <!-- Displays the website owner's initials. -->
+          <span class="brand-mark">NO</span>
+
+          <!-- Displays the website owner's name and decorative brand dot. -->
+          <span class="brand-name">
+            Natasha Okocha<span class="brand-dot">.</span>
+          </span>
+        </a>
+
+        <!-- Short statement summarising the website owner's professional mission. -->
+        <p>Creating better customer experiences, one interaction at a time.</p>
+
+        <!-- Copyright notice. The data-year attribute can be targeted by JavaScript to update the year dynamically. -->
+        <p class="copyright">© <span data-year>2026</span> Natasha Okocha</p>
+      </div>
+    </footer>
+  </body>
+</html>

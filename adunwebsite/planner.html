@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Set the page encoding, responsive layout, browser theme, and search description. -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f5ff" />
+    <meta
+      name="description"
+      content="Plan your academic and customer success tasks with Natasha Okocha's interactive planner."
+    />
+    <title>Academic Planner - Natasha Okocha</title>
+    <!-- Load the site's fonts, shared styles, and JavaScript after HTML parsing. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Let keyboard users skip directly to the page's main content. -->
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Shared site header with branding and responsive navigation. -->
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="Natasha Okocha home"
+          ><span class="brand-mark">NO</span
+          ><span class="brand-name"
+            >Natasha Okocha<span class="brand-dot">.</span></span
+          ></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="projects.html">Projects</a
+          ><a href="planner.html" aria-current="page">Planner</a
+          ><a class="nav-contact" href="contact.html"
+            >Let’s Talk <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- Main content contains the planner introduction and task-management interface. -->
+    <main id="main">
+      <!-- Introduce the planner and explain that tasks are saved in this browser. -->
+      <section class="page-hero section-wrap planner-hero">
+        <p class="eyebrow">YOUR SPACE TO GET THINGS DONE</p>
+        <h1>
+          Make a little room<br />for <span class="text-accent">progress.</span>
+        </h1>
+        <p class="page-lede">
+          Add a task, take it one step at a time, and celebrate what you finish.
+          Your list stays saved in this browser.
+        </p>
+      </section>
+      <!-- Task entry, task list, progress count, and a supporting reminder. -->
+      <section class="section-wrap planner-section">
+        <div class="planner-card">
+          <!-- Show the planner heading and a live count of unfinished tasks. -->
+          <div class="planner-heading">
+            <div>
+              <p class="eyebrow">ACADEMIC PLANNER</p>
+              <h2>This week, <span data-today>one thing at a time.</span></h2>
+            </div>
+            <div class="task-count" aria-live="polite">
+              <strong data-task-count>0</strong><span>tasks left</span>
+            </div>
+          </div>
+          <!-- Required task input; submitting this form adds a task to the list. -->
+          <form class="task-form" id="task-form">
+            <label class="sr-only" for="task-input">New academic task</label
+            ><input
+              id="task-input"
+              name="task"
+              type="text"
+              maxlength="120"
+              placeholder="e.g. Review lecture notes for biology"
+              required
+            /><button class="button button-primary" type="submit">
+              Add task <span aria-hidden="true">+</span>
+            </button>
+          </form>
+          <p class="form-hint">
+            Press Enter or select Add task to save it to your list.
+          </p>
+          <!-- script.js renders saved tasks here and toggles the empty state below. -->
+          <ul class="task-list" id="task-list" aria-label="Academic tasks"></ul>
+          <div class="empty-state" id="empty-state">
+            <span class="empty-icon">✳</span>
+            <h3>Your list is a blank page.</h3>
+            <p>Add your first task above and get started.</p>
+          </div>
+          <!-- Explain where tasks are stored and provide a control to remove completed tasks. -->
+          <div class="planner-footer">
+            <p>
+              <span class="status-dot"></span> Tasks are stored on this device
+              only.
+            </p>
+            <button class="clear-completed" id="clear-completed" type="button">
+              Clear completed
+            </button>
+          </div>
+        </div>
+        <!-- A static motivational note displayed beside the planner. -->
+        <aside class="planner-tip">
+          <span class="tip-icon">✦</span>
+          <p>
+            <strong>A small reminder</strong>Progress isn’t always a straight
+            line. Choose one task, start where you are, and give yourself credit
+            for showing up.
+          </p>
+        </aside>
+      </section>
+    </main>
+    <!-- Shared footer with site branding, tagline, and copyright year. -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand footer-brand" href="index.html"
+          ><span class="brand-mark">NO</span
+          ><span class="brand-name"
+            >Natasha Okocha<span class="brand-dot">.</span></span
+          ></a
+        >
+        <p>Creating better customer experiences, one interaction at a time.</p>
+        <p class="copyright">© <span data-year>2026</span> Natasha Okocha</p>
+      </div>
+    </footer>
+  </body>
+</html>

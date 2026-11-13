@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f5ff" />
+    <meta
+      name="description"
+      content="Contact Natasha Okocha to talk customer experience, opportunities, and collaboration."
+    />
+    <title>Contact Natasha - Customer Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="Natasha Okocha home"
+          ><span class="brand-mark">NO</span
+          ><span class="brand-name"
+            >Natasha Okocha<span class="brand-dot">.</span></span
+          ></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="projects.html">Projects</a><a href="planner.html">Planner</a
+          ><a class="nav-contact" href="contact.html" aria-current="page"
+            >Let’s Talk <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-hero section-wrap contact-hero">
+        <p class="eyebrow">MY INBOX IS OPEN</p>
+        <h1>
+          Let’s talk <span class="text-accent">customer experience.</span>
+        </h1>
+        <p class="page-lede">
+          Have a question, opportunity, or idea to share? I’d love to hear from
+          you.
+        </p>
+      </section>
+      <section class="section-wrap contact-layout">
+        <div class="contact-aside">
+          <div class="contact-aside-inner">
+            <span class="contact-star">✳</span>
+            <p class="eyebrow">LET’S MAKE A CONNECTION</p>
+            <h2>Good conversations<br />lead to <span>good things.</span></h2>
+            <p>
+              I’m always happy to talk about customer success, service
+              operations, and opportunities to make customer experiences better.
+            </p>
+            <div class="contact-info">
+              <span class="info-icon">☎</span>
+              <div>
+                <small>PHONE</small
+                ><a href="tel:+2348012345678">+234 801 234 5678</a>
+              </div>
+            </div>
+            <div class="contact-info">
+              <span class="info-icon">@</span>
+              <div>
+                <small>EMAIL</small
+                ><a href="mailto:hello@natashaokocha.com"
+                  >hello@natashaokocha.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-info">
+              <span class="info-icon">⌖</span>
+              <div><small>BASED IN</small><span>Lagos, Nigeria</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <p class="eyebrow">SEND A NOTE</p>
+          <h2>I’ll get back to you soon.</h2>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="contact-name">Your name <span>*</span></label
+                ><input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  aria-describedby="name-error"
+                /><small class="field-error" id="name-error"></small>
+              </div>
+              <div class="field">
+                <label for="contact-email">Email address <span>*</span></label
+                ><input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  aria-describedby="email-error"
+                /><small class="field-error" id="email-error"></small>
+              </div>
+            </div>
+            <div class="field">
+              <label for="contact-phone">Phone number <span>*</span></label
+              ><input
+                id="contact-phone"
+                name="phone"
+                type="tel"
+                inputmode="numeric"
+                autocomplete="tel"
+                placeholder="Digits only, e.g. 5551234567"
+                required
+                aria-describedby="phone-error"
+              /><small class="field-error" id="phone-error"></small>
+            </div>
+            <div class="field">
+              <label for="contact-message">Your message <span>*</span></label
+              ><textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                required
+                aria-describedby="message-error"
+              ></textarea
+              ><small class="field-error" id="message-error"></small>
+            </div>
+            <button class="button button-primary submit-button" type="submit">
+              Send message <span aria-hidden="true">↗</span>
+            </button>
+            <p class="form-hint">
+              All fields are required. This demo form will confirm your message
+              in the browser.
+            </p>
+            <div
+              class="form-result"
+              id="form-result"
+              role="status"
+              aria-live="polite"
+            ></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand footer-brand" href="index.html"
+          ><span class="brand-mark">NO</span
+          ><span class="brand-name"
+            >Natasha Okocha<span class="brand-dot">.</span></span
+          ></a
+        >
+        <p>Creating better customer experiences, one interaction at a time.</p>
+        <p class="copyright">© <span data-year>2026</span> Natasha Okocha</p>
+      </div>
+    </footer>
+  </body>
+</html>
