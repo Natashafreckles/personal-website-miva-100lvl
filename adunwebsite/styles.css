@@ -1664,6 +1664,15 @@ h3 {
   border: 1px solid #526679;
   border-radius: 6px;
 }
+.info-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8px;
+}
 .contact-info small,
 .contact-info div > a,
 .contact-info div > span {
